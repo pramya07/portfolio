@@ -1,0 +1,150 @@
+/* Global */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  background: #fff;
+  color: #333;
+}
+
+h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #008b8b;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 40px;
+  gap: 50px;
+}
+
+.hero-left img {
+  max-width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.hero-right h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #008b8b;
+}
+
+.hero-right p {
+  margin: 20px 0;
+}
+
+.btn-group .btn {
+  display: inline-block;
+  padding: 12px 25px;
+  margin-right: 15px;
+  background: #00adb5;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover { background: #007b80; }
+
+.social a {
+  margin-right: 12px;
+  font-size: 20px;
+  color: #555;
+}
+
+.social a:hover { color: #00adb5; }
+
+/* About */
+.about {
+  max-width: 900px;
+  margin: auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Projects */
+.projects {
+  padding: 60px 20px;
+  background: #f9f9f9;
+}
+
+.project-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-card {
+  flex: 1 1 250px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Services */
+.services {
+  padding: 60px 20px;
+}
+
+.service-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-card {
+  flex: 1 1 250px;
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.service-card i {
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: #00adb5;
+}
+
+/* Contact */
+.contact {
+  padding: 60px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.contact-links a {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 20px;
+  background: #00adb5;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+.contact-links a:hover { background: #007b80; }
+
+/* Responsive */
+@media (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+  }
+
+  .hero-left img { max-width: 250px; }
+  .hero-right h1 { font-size: 36px; }
+}
