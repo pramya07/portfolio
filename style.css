@@ -1,310 +1,322 @@
-*{
+/* =============================
+   Global Styles
+============================= */
+
+/* Apply to the whole page */
+* {
     box-sizing: border-box;
     padding: 10;
     margin: 0;
-    font-family: poppins,sans-serif;
+    font-family: poppins, sans-serif;
     text-decoration: none;
-}
-/* Apply to the whole page */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html, body {
-  width: 100%;
-  min-height: 100vh;
-  overflow-x: hidden; /* Prevent horizontal scroll */
-  font-family: sans-serif; /* Optional */
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    font-family: sans-serif; /* Optional */
 }
 
-/* Optional container styling */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    position: relative;
 }
 
 body::before {
-  content: "";
-  background: url('sky.jpg') no-repeat center center fixed;
-  background-size: cover;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.4; /* Adjust to your preferred fade level */
-  z-index: -1;
+    content: "";
+    background: url('sky.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4; /* Adjust to your preferred fade level */
+    z-index: -1;
 }
 
-  
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 1px;
+    padding-bottom: 2px;
+    position: relative;
+    padding-top: 60px; /* Adjust for top spacing */
+}
+
+/* Divider */
 .divider {
     height: 2px;
-    background-color: #0a79b9;
+    background-color: #59cff3;
     margin: 20px 0;
 }
 
-.wrapper{
-    width:1280px;
+/* Wrapper */
+.wrapper {
+    width: 1280px;
     max-width: 90%;
     margin: 0 auto;
     padding: 0 20px;
 }
-header{
-    padding: 30px 0 30px;
+
+/* =============================
+   Header & Navigation
+============================= */
+
+header {
+    padding: 30px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
-.logo{
+
+/* Logo */
+.logo {
     display: inline-flex;
     justify-content: center;
     align-items: center;
 }
-.logo i{
+
+.logo i {
     height: 45px;
-    width:45px;
+    width: 45px;
     background-color: #6fa9ac;
     border-radius: 50%;
-    color:#dde5e7;
+    color: #dde5e7;
     font-weight: 700;
     font-size: 1.5rem;
     padding: 10px;
     margin-right: 5px;
     cursor: pointer;
     text-align: center;
-    
 }
-.logo .logo-text{
+
+.logo .logo-text {
     font-size: 24px;
     font-weight: 700;
-    color:#6fa9ac;
+    color: #6fa9ac;
 }
-nav .togglebtn{
+
+/* Navigation */
+nav .togglebtn {
     width: 35px;
     height: 35px;
     position: absolute;
-    top:45px;
+    top: 45px;
     right: 3%;
     z-index: 5;
     cursor: pointer;
     display: none;
 }
-nav .togglebtn span{
+
+nav .togglebtn span {
     display: block;
     background-color: #00ADB5;
-    margin: 5px 0px;
-    width:100%;
-    height:3px;
+    margin: 5px 0;
+    width: 100%;
+    height: 3px;
     transition: 0.3s;
-    transition-property:  transform, opacity;
-
+    transition-property: transform, opacity;
 }
 
-nav .navlinks{
+nav .navlinks {
     list-style-type: none;
 }
-nav .navlinks li{
+
+nav .navlinks li {
     display: inline-block;
 }
-nav .navlinks li a{
-     color:#071922;
-     margin-right: 3rem;
-     
+
+nav .navlinks li a {
+    color: #071922;
+    margin-right: 3rem;
 }
-.container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-right:1px;
-    padding-bottom:2px;
-}
+
+/* =============================
+   Hero / Text Content
+============================= */
+
 .text-content {
     position: relative;
     color: white;
-    max-width: 600px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
     padding: 20px;
     background: rgba(255, 255, 255, 0.5); /* Optional background for readability */
     border-radius: 10px; /* Optional rounded corners */
     z-index: 2; /* Ensure text is above the background image */
 }
 
-.text-content {
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-}
-.text-content  h5{
-    color:#000000;
+.text-content h5 {
+    color: #000000;
     font-size: 14px;
 }
-.text-content  h5 span{
-    color:#247479;
+
+.text-content h5 span {
+    color: #247479;
     font-size: 16px;
 }
-.text-content  h1{
+
+.text-content h1 {
     color: #5eb3b8;
     font-size: 3rem;
     width: 00px;
 }
 
-
-.text-content  p{
-    color:#af2525;
-    
-
+.text-content p {
+    color: #af2525;
 }
-.btn-group{
-    margin:45px 0;
+
+.btn-group {
+    margin: 45px 0;
 }
-.btn-group .btn{
+
+.btn-group .btn {
     border-color: #d5d5d5;
-    color:#fff;
+    color: #fff;
     background-color: #00ADB5;
     padding: 12px 25px;
-    margin: 5px 0px;
-    margin-right:7px;
+    margin: 5px 0;
+    margin-right: 7px;
     border-radius: 30px;
-    border:2px solid #e5e5e5;
-    box-shadow:  0 10px 10px -8px rgb(0 0 0 / 78%);
+    border: 2px solid #e5e5e5;
+    box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
 }
-.btn.active{
+
+.btn.active {
     border-color: #5eb3b8;
 }
-.text-content .social i{
+
+.text-content .social i {
     color: #e5e5e5;
     font-size: 18px;
     margin-right: 10px;
     transition: 0.5s;
 }
-.text-content  .social i:hover{
-    color:#5eb3b8;
+
+.text-content .social i:hover {
+    color: #5eb3b8;
     transform: rotate(360deg);
 }
-/* Respnosiv design & displaying navbar for small screen */
-@media(max-width:930px)
-{
-    nav .togglebtn{
+
+/* =============================
+   Responsive Navbar
+============================= */
+
+@media (max-width: 930px) {
+    nav .togglebtn {
         display: initial;
     }
-    /* for toggle button**/
+
     .click {
-        top:45px;
+        top: 45px;
     }
-    .click span{
+
+    .click span {
         position: absolute;
-        margin-top:12px
+        margin-top: 12px;
     }
-    .click span:first-child{
+
+    .click span:first-child {
         transform: rotate(-40deg);
     }
-    .click span:nth-child(2)
-    {
+
+    .click span:nth-child(2) {
         opacity: 0;
-        margin:0;
+        margin: 0;
     }
-    .click span:last-child{
+
+    .click span:last-child {
         transform: rotate(45deg);
-        top:0;
+        top: 0;
     }
-    nav .navlinks{
+
+    nav .navlinks {
         position: absolute;
-        top:110px;
-        right:-100%;
+        top: 110px;
+        right: -100%;
         bottom: 0;
         width: 60%;
         height: 100vh;
         background-color: #0000;
         z-index: 3;
-        box-shadow: 5px 13px 30px rgba(0,0,0,0.1);
+        box-shadow: 5px 13px 30px rgba(0, 0, 0, 0.1);
         transition: 0.5s;
-        padding: 25px 0px;
+        padding: 25px 0;
     }
-    nav .navlinks li{
+
+    nav .navlinks li {
         display: block;
     }
-    nav .navlinks li a{
+
+    nav .navlinks li a {
         display: block;
         margin-bottom: 15px;
         text-align: center;
     }
-    nav .navlinks.open{
-        right:0;
+
+    nav .navlinks.open {
+        right: 0;
     }
 }
 
-@media(max-width:768px)
-{
-    .container{
+@media (max-width: 768px) {
+    .container {
         flex-direction: column;
-        padding-top:2rem
+        padding-top: 2rem;
     }
-    .hero-text{
-        padding:40px 0px;
+
+    .hero-text {
+        padding: 40px 0;
     }
 }
 
-h2 {
-    font-size: 2.5rem;
-    margin: 0; /* Remove default margins */
-    text-align: center;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    padding-top: 20px; /* Add some padding to the top */
-    z-index: 1; /* Ensure the title is on top */
-}
+/* =============================
+   Sections
+============================= */
 
-.container {
-    position: relative;
-    padding-top: 60px; /* Adjust this value to ensure there's space for the title */
-}
-
-
+/* About Section */
 .about-section {
     padding: 60px 5px;
-    background-color:#000000;
+    background-color: #51e2d6;
     text-align: center;
 }
 
-
-
 .about-section .container {
-    max-width:1100px;
+    max-width: 1100px;
     margin: 0 auto;
-    background-image: url('flowertop.jpg') ; /* Adjust path as needed */
+    background-image: url('flowertop.jpg');
     background-repeat: no-repeat;
     background-position: bottom center;
-    
-
 }
 
 .about-section h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #9cf2f8;
+    color: #0d1c1d;
 }
 
 .about-section p {
     font-size: 1.2rem;
     line-height: 2.4;
-    color: #f0ffff;
+    color: #002c2c;
     margin-bottom: 15px;
-    
-
 }
-/*project section*/
+
+/* Project Section */
 .project-section {
     padding: 60px 20px;
     background-color: rgb(206, 206, 206);
@@ -314,7 +326,6 @@ h2 {
 .project-section .container {
     max-width: 1200px;
     margin: 0 auto;
-    
 }
 
 .project-section h2 {
@@ -376,9 +387,7 @@ h2 {
     background-color: #5753d7;
 }
 
-
-/*my services  */
-
+/* Services Section */
 .services-section {
     padding: 60px 20px;
     background-color: #bbbbbb;
@@ -436,6 +445,7 @@ h2 {
     color: #666;
 }
 
+/* Contact Section */
 .contact-section {
     padding: 60px 20px;
     background-color: #f9f9f9;
@@ -445,23 +455,19 @@ h2 {
 .contact-section .container {
     max-width: 1200px;
     margin: 0 auto;
-    max-width: 1200px;
-    display:flex;
-    justify-content: space-between; /* Adjust spacing between boxes */
-    gap: 50px; /* Space between boxes */
     display: grid;
+    justify-content: space-between;
+    gap: 50px;
     align-items: center;
-
 }
 
-.contact-section .container h2 {
+.contact-section h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
     color: #333;
-    align-items: center;
 }
 
-.contact-section .container p {
+.contact-section p {
     font-size: 1rem;
     color: #666;
     margin-bottom: 40px;
@@ -472,7 +478,6 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-   
 }
 
 .contact-info,
@@ -501,10 +506,6 @@ h2 {
 .contact-info p i,
 .contact-info p a {
     color: #6c63ff;
-}
-
-.contact-info p a {
-    text-decoration: none;
 }
 
 .contact-info p a:hover {
